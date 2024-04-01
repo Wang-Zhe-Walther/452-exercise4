@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* 基础样式 */  
+body {    
+  margin: 0;    
+  padding: 0;    
+  font-family: Arial, sans-serif;    
+  display: flex;    
+  flex-direction: column;    
+  align-items: center;    
+  justify-content: center;    
+  min-height: 100vh;    
+  background-color: #f5f5f5;    
+}  
+  
+.header {  
+   
+  color: #fff;  
+  padding: 20px;  
+  text-align: center;  
+}  
+  
+.small-text {    
+  font-size: 14px;    
+  color: #999999;    
+  text-align: center;  
+}  
+  
+.big-text {    
+  font-size: 50px;    
+  color: #000000;    
+  text-align: center;  
+  margin: 0;  
+}  
+  
+.container {    
+  max-width: 100%;   
+  margin: 20px;    
+  padding: 20px;    
+  background-color: #fff;    
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);    
+  border-radius: 5px;    
+}  
+  
+.topnav {      
+  width: 100%;    
+  background-color: #333;    
+  color: #fff;    
+  padding: 0;    
+  list-style: none;    
+  display: flex;    
+  align-items: center;    
+  height: 50px;    
+  overflow: hidden;  
+}  
+  
+.topnav a {      
+  color: #fff;      
+  text-decoration: none;      
+  display: inline-block;      
+  padding: 0 10px; /* 添加内边距以提供链接之间的可视间隔 */    
+  margin: 0;      
+  line-height: 50px;      
+  transition: color 0.3s ease;    
+}  
+  
+.topnav a:hover {    
+  color: #ccc;    
+}  
+  
+/* 用于将某个链接推到右边 */  
+.topnav .right {  
+  margin-left: auto;  
+}
+  
+.row {    
+  display: flex;  
+  flex-wrap: nowrap;  
+  width: 100%;
+}  
+  
+.leftcolumn {    
+  flex: 8;    
+  padding: 20px;  
+}  
+  
+.rightcolumn {    
+  flex: 2;  
+  padding: 20px;  
+  background-color: #f9f9f9;  
+}  
+  
+.card {    
+  margin-bottom: 20px;  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  
+  padding: 20px;  
+  border-radius: 5px;  
+  background-color: #fff;  
+  transition: transform 0.3s ease;  
+}  
+  
+.card:hover {  
+  transform: scale(1.02);  
+}  
+  
+@media screen and (max-width: 600px) {    
+  .row {    
+    flex-direction: column;    
+  }  
+    
+  .leftcolumn, .rightcolumn {    
+    flex: 1;    
+  }  
+    
+  .container {    
+    margin: 10px;  
+    padding: 10px;  
+  }  
+}
+.footer {  
+  background-color: #333; /* 黑色背景 */  
+  color: #fff; /* 白色文本 */  
+  padding: 20px; /* 内边距 */  
+  text-align: center; /* 文本居中 */  
+  width: 100%; /* 确保页脚宽度为100% */  
+  box-sizing: border-box; /* 确保padding和border不会增加元素的宽度 */   
+}  
+.footer a {  
+            color: #26ff00;  
+            text-decoration: none;  
+            margin: 0 5px;  
+        }  
+          
+        .footer a:hover {  
+            color: #ccc;  
+        }  
+.myImage {  
+    width: auto; /* 设置图片的宽度 */  
+    height: 275px; /* 高度自动以保持原始宽高比 */  
+  }  
+
+ .k-Image {
+  width: 1250px; /* 设置图片的宽度 */  
+    height: 500px; /* 高度自动以保持原始宽高比 */ 
+ }
+</style>
+</head>
+<body>
+
+<ul class="header">
+  <h1 class="big-text">Home</h1>
+  <p class="small-text">Welcome to my Web-Page!!!</p>
+</ul>
+
+<div class="topnav">  
+  <a href="index.html">Home</a>  
+  <a href="project.html">Project</a>  
+  <a href="travel.html">Travel</a>  
+  <a href="#" class="right">Link</a>  
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>XXX Mountain </h2>
+      <h5>Title description, Dec 7, 2024</h5>
+      <div class="fakeimg" style="height: 500px;">
+        <img src="travel-2.jpg" alt="Mountain" class="k-Image">
+      </div>
+      <p>Here, the mountains and rivers are towering, with layers of peaks, like a natural ink painting. Strolling through it, you can feel the wonders of nature and appreciate the unique charm of the mountains.</p>
+      <p>  </p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING card</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" >Image</div>
+      <p>Some text..</p>
+      <p></p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:300px;" >
+        <img src="me.jpg" alt="我的照片" class="myImage">
+      </div>
+      <p>My name is Walther
+      </p>
+      <p>A person from IT A2 who likes IT</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <p>Currently not available</p>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Take a look at my webpage</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>contact us :</p>
+  <a href="https://www.facebook.com/" target="_blank">Facebook</a>  
+            <a href="https://www.twitter.com/" target="_blank">Twitter</a>  
+  <h2>&copy; 2023 My Website. All rights reserved.</h2>
+</div>
+
+</body>
+</html>
